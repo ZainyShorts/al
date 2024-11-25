@@ -1,0 +1,125 @@
+/* .container {
+    background-color: var(--bgSoft);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .form input,
+  .form textarea,
+  .form select {
+    padding: 30px;
+    background-color: var(--bg);
+    color: var(--text);
+    border: 2px solid #2e374a;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  
+  .form input, .form select {
+    width: 45%;
+  }
+  
+  .form textarea{
+    width: 100%;
+  }
+  
+  .form button{
+    width: 100%;
+    padding: 30px;
+    background-color: teal;
+    color: var(--text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+   */
+
+
+   .container{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20;
+}
+.customFileUpload {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed var(--textSoft);
+    background-color: var(--bgSoft);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-right: 100px;
+    box-shadow: 0px 48px 35px -48px var(--textSoft);
+  }
+  
+ .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .svg {
+    height: 80px;
+    fill: var(--textSoft);
+  }
+  
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .span {
+    font-weight: 400;
+    color: var(--textSoft);
+  }
+  
+   .input {
+    display: none;
+  }
+  .button {
+    padding: 8px 25px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+    background: #5d57c9;
+    color: var(--textSoft);
+    font-weight: 600;
+   }
+   
+   .button:hover {
+    background: #534bf3;
+   }
+
+   .textArea{
+    padding: 30px;
+    background-color: var(--bg);
+    color: var(--text);
+    border: 2px solid #2e374a;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 90%;
+   }

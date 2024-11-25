@@ -1,0 +1,20 @@
+import { NextRequest, NextResponse } from 'next/server';
+
+export function middleware(req: NextRequest) {
+  const token = req.cookies.get('token');
+
+  const { pathname } = req.nextUrl;
+  
+   // If user is accessing the dashboard and does not have a token, redirect to login
+   if (pathname.includes('dashboard') && !token) {
+    return NextResponse.redirect(new URL('/login', req.url));
+  }
+  else if (pathname === '/login' || pathname === '/' && token?.value) {
+    return NextResponse.redirect(new URL('/dashboard', req.url));
+  }
+
+ 
+
+  // Allow the request to proceed if it doesn't match the above conditions
+  return NextResponse.next();
+}
